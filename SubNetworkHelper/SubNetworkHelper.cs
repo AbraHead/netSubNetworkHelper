@@ -7,10 +7,6 @@ public class SubNetworkHelper
         private byte[] _maskBytes;
         private byte[] _dnsBytes = new byte[]{8,8,8,8};
 
-        /*public byte[] IpBytes => _ipBytes;
-        public byte[] MaskBytes => _maskBytes;
-        public byte[] DnsBytes => _dnsBytes;*/
-
         private byte[] _startIPAddress;
         public IPAddress StartIpAddress => new IPAddress(_startIPAddress);
         
@@ -36,8 +32,6 @@ public class SubNetworkHelper
         private byte[] _broadcastIP;
         public IPAddress BroadcastIp => new IPAddress(_broadcastIP);
 
-        /*public static byte lastOctetNumber = 4;
-        public static byte arrayLastOctetNumber = (byte)(lastOctetNumber - 1);*/
         public SubNetworkHelper(IPAddress ip, IPAddress mask, IPAddress dns)
         {
             _ipBytes = ip.GetAddressBytes();
@@ -71,24 +65,6 @@ public class SubNetworkHelper
 
         }
 
-        /*public bool MaskValidation(byte[] mask)
-        {
-            
-        }*/
-        
-        /*public bool MaskValidation(IPAddress mask)
-        {
-            bool validmask = true;
-            OctetHelper octet;
-            foreach (var maskoctet in _maskBytes)
-            {
-                octet = new OctetHelper(maskoctet);
-                validmask = validmask & octet.ValidateMaskOctet();
-            }
-
-            return validmask;
-        }*/
-        
         public IPAddress[] GetIPRange()
         {
             return new IPAddress[]
@@ -118,15 +94,8 @@ public class SubNetworkHelper
         
         public OctetHelper(byte maskOctet)
         {
-            //_ipOctet = ipOctet;
             _maskOctet = maskOctet;
-            //_networkOctet = (byte)(_ipOctet & _maskOctet);
-            //_wildcardOctet = (byte)~_maskOctet;
-            //_broadcastOctet = (byte)(_networkOctet | _wildcardOctet);
         }
-        
-
-        //public static byte NetworkOctet => _networkOctet;
 
         public byte NetworkOctet
         {
@@ -153,19 +122,4 @@ public class SubNetworkHelper
             return lastOctet ? (byte)(_broadcastOctet - (byte)1) : (byte)(_broadcastOctet);
         }
 
-        public bool ValidateMaskOctet()
-        {
-            bool valid = false;
-            byte startnumber = 127;
-            byte validoctet;
-            //List<byte> validoctets = new List<byte>();
-            while (startnumber != 255)
-            {
-                validoctet = (byte)~startnumber;
-                valid = valid | (_maskOctet == validoctet);
-                startnumber = (byte)(startnumber >> 1);
-            }
-            //startoctet >> 1;
-            return valid;
-        }
     }

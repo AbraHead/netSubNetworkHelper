@@ -49,10 +49,4 @@ public class SubNetworkHelperInt
 
     }
 
-    /*public static void main()
-    {
-        IPAddress ip = new IPAddress(new byte[] {192, 168, 36, 36});
-        IPAddress mask = new IPAddress(new byte[] {255, 252, 0, 0});
-        SubNetworkHelperInt test = new SubNetworkHelperInt(ip, mask);
-    }*/
 }
