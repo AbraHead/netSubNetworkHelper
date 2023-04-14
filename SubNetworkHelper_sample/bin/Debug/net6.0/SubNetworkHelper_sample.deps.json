@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SubNetworkHelper_sample/1.0.0": {
+        "dependencies": {
+          "SubNetworkHelper": "1.0.0"
+        },
+        "runtime": {
+          "SubNetworkHelper_sample.dll": {}
+        }
+      },
+      "SubNetworkHelper/1.0.0": {
+        "runtime": {
+          "SubNetworkHelper.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SubNetworkHelper_sample/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SubNetworkHelper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

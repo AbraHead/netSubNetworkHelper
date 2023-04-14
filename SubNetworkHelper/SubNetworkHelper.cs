@@ -49,7 +49,6 @@ public class SubNetworkHelper
             foreach (var (ipoctet, maskoctet) in Enumerable.Zip(_ipBytes, _maskBytes))
             {
                 // Флаг требуется для проверки последний ли октет рассматривается
-                // Умираю...
                 lastOctet = octetindexer == 3;
                 
                 octet = new OctetHelper(ipoctet, maskoctet);

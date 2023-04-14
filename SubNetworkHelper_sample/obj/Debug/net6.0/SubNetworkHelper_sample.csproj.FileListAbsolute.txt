@@ -1,0 +1,15 @@
+C:\Users\vishnevsky\RiderProjects\SubNetworkHelper\SubNetworkHelper_sample\bin\Debug\net6.0\SubNetworkHelper_sample.deps.json
+C:\Users\vishnevsky\RiderProjects\SubNetworkHelper\SubNetworkHelper_sample\bin\Debug\net6.0\SubNetworkHelper_sample.dll
+C:\Users\vishnevsky\RiderProjects\SubNetworkHelper\SubNetworkHelper_sample\bin\Debug\net6.0\SubNetworkHelper_sample.pdb
+C:\Users\vishnevsky\RiderProjects\SubNetworkHelper\SubNetworkHelper_sample\bin\Debug\net6.0\SubNetworkHelper.dll
+C:\Users\vishnevsky\RiderProjects\SubNetworkHelper\SubNetworkHelper_sample\bin\Debug\net6.0\SubNetworkHelper.pdb
+C:\Users\vishnevsky\RiderProjects\SubNetworkHelper\SubNetworkHelper_sample\obj\Debug\net6.0\SubNetworkHelper_sample.csproj.AssemblyReference.cache
+C:\Users\vishnevsky\RiderProjects\SubNetworkHelper\SubNetworkHelper_sample\obj\Debug\net6.0\SubNetworkHelper_sample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vishnevsky\RiderProjects\SubNetworkHelper\SubNetworkHelper_sample\obj\Debug\net6.0\SubNetworkHelper_sample.AssemblyInfoInputs.cache
+C:\Users\vishnevsky\RiderProjects\SubNetworkHelper\SubNetworkHelper_sample\obj\Debug\net6.0\SubNetworkHelper_sample.AssemblyInfo.cs
+C:\Users\vishnevsky\RiderProjects\SubNetworkHelper\SubNetworkHelper_sample\obj\Debug\net6.0\SubNetworkHelper_sample.csproj.CoreCompileInputs.cache
+C:\Users\vishnevsky\RiderProjects\SubNetworkHelper\SubNetworkHelper_sample\obj\Debug\net6.0\SubNetworkHelper_sample.csproj.CopyComplete
+C:\Users\vishnevsky\RiderProjects\SubNetworkHelper\SubNetworkHelper_sample\obj\Debug\net6.0\SubNetworkHelper_sample.dll
+C:\Users\vishnevsky\RiderProjects\SubNetworkHelper\SubNetworkHelper_sample\obj\Debug\net6.0\refint\SubNetworkHelper_sample.dll
+C:\Users\vishnevsky\RiderProjects\SubNetworkHelper\SubNetworkHelper_sample\obj\Debug\net6.0\SubNetworkHelper_sample.pdb
+C:\Users\vishnevsky\RiderProjects\SubNetworkHelper\SubNetworkHelper_sample\obj\Debug\net6.0\ref\SubNetworkHelper_sample.dll
