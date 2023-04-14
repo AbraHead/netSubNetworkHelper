@@ -82,18 +82,6 @@ public class SubNetworkHelperInt
         return ipAddresses;
     }
 
-    public List<IPAddress> GetRangeIpAddressesInt()
-    {
-        List<IPAddress> ipAddresses = new List<IPAddress>();
-        uint firstip = BitConverter.ToUInt32(FirstIP.GetAddressBytes());
-        uint endip = BitConverter.ToUInt32(EndIP.GetAddressBytes());
-
-        int octet = 3;
-        int bit = 32;
-        firstip = firstip | (uint)(1 << bit);
-        return ipAddresses;
-    }
-
     public static byte[] GetBytes(uint ip)
     {
         byte[] bip = new[]
