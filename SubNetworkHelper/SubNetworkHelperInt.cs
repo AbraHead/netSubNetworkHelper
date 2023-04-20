@@ -65,21 +65,17 @@ public class SubNetworkHelperInt
     {
 
         List<IPAddress> ipAddresses = new List<IPAddress>();
-        byte[] bnextip = FirstIP.GetAddressBytes();
-        byte[] bendip = EndIP.GetAddressBytes();
-        int octet = 1;
-        while (octet != bendip.Length)
+        uint uintFirstIP = BitConverter.ToUInt32(FirstIP.GetAddressBytes().Reverse().ToArray());
+        uint uintEndIP = BitConverter.ToUInt32(EndIP.GetAddressBytes().Reverse().ToArray());
+
+        while (uintFirstIP < uintEndIP)
         {
-            if (bnextip[^octet] == bendip[^octet])
-            {
-                octet++;
-                continue;
-            }
-            bnextip[^octet]++;
-            IPAddress nextip = new IPAddress(bnextip);
-            ipAddresses.Add(nextip);
+            uintFirstIP++;
+            ipAddresses.Add(new IPAddress(BitConverter.GetBytes(uintFirstIP).Reverse().ToArray()));
         }
+            
         return ipAddresses;
+        
     }
 
     public static byte[] GetBytes(uint ip)
